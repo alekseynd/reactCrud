@@ -1,0 +1,28 @@
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f4f4f4;
+  font-family: "PT Sans";
+  box-sizing: border-box;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.general_wrapper {
+  margin: 0 auto;
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px dashed sienna;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px)  {
+  .general_wrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

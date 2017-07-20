@@ -1,0 +1,180 @@
+.main_wrapper {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.error_types__header {
+    width: 100%;
+    color: #333333;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+nav {
+    margin-bottom: 39px;
+}
+.nav__bread_crumd {
+    width: 81px;
+    height: 13px;
+    color: #0885a0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: underline;
+}
+.nav__bread_crumd:hover {
+    color: #00566C;
+    cursor: pointer;
+}
+.nav__arrow {
+    width: 9px;
+    height: 9px;
+    color: #333333;
+    font-family: "Minion Pro";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+
+.error_types__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 436px;
+}
+.error_types__input_field_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: baseline;
+}
+.error_types__input_field_wrapper select {
+    appearance: none;
+    background-color: #ffffff;
+    background: url(./../../../images/select.png) 101% / 12% no-repeat #ffffff;
+}
+
+.error_types__input_field_wrapper input[type='date'] {
+    background: url(./../../../images/calendar.png) 101% / 12% no-repeat #ffffff;
+}
+.error_types__input_field_wrapper input[type='date']::-webkit-calendar-picker-indicator {
+    width: 36px;
+    height:34px;
+    margin: 0;
+    padding: 0;
+    color: transparent;
+    left: 10px;
+    /*display: none;*/
+}
+.error_types__input_field_wrapper input[type='date']::-webkit-calendar-picker-indicator:hover {
+    color: transparent;
+    background-color: transparent;
+}
+.error_types__input_field_wrapper input[type='date']::-webkit-inner-spin-button {
+    position: relative;
+    height: 34px;
+    top: -90%;
+    left: 5px;
+}
+
+.error_types__input_field_wrapper p{
+    margin: 0;
+}
+.error_types__form input[type='text'], input[type='date'], select, textarea {
+    width: 294px;
+    height: 33px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+    padding: 10px 9px;
+}
+.error_types__form select {
+    padding: 0 6px;
+}
+
+
+.error_types__form  input[type='text']:focus , input[type='date']:focus, textarea:focus, select:focus {
+    outline: 0px;
+    border: 1px solid #cccccc;
+}
+
+.error_types__form textarea {
+    width: 294px;
+    height: 113px;
+    resize: vertical;
+}
+
+.error_types__form  input[type='text']:focus::placeholder , input[type='date']:focus::placeholder, textarea:focus::placeholder, select:focus::placeholder {
+    color: #cccccc;
+}
+
+.error_types__form {
+    color: #333333;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.error_types__form textarea[type=text] {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.error_types__controls_panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+.error_types__controls_panel___button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    background-color: #0885a0;
+    border-radius: 5px;
+    height: 33px;
+    margin-right: 20px;
+    color: #ffffff;
+}
+.error_types__controls_panel___button:hover {
+    background-color: #00566C;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 640px)  {
+    .error_types__header {
+        font-size: 30px;
+    }
+    .error_types__input_field_wrapper {
+        justify-content: space-between;
+        flex-direction: column;
+        padding-bottom: 20px;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 420px)  {
+    .error_types__header {
+        font-size: 24px;
+    }
+    error_types__input_field_wrapper p {
+        padding-bottom: 5px;
+    }
+    .error_types__controls_panel {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+    .error_types__controls_panel___button {
+        margin-bottom: 15px;
+        width: 200px;
+    }
+    .error_types__form input[type='text'], input[type='date'], select, textarea[type='text'] {
+        min-width: 265px;
+        width: 80vw;
+    }
+}
+
